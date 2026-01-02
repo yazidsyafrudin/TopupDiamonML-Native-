@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- BACK -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back_icon"
+                app:tint="@color/white" />
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Buat Akun Baru"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Daftar untuk memulai top up diamond"
+                android:textColor="@color/white_70"
+                android:textSize="14sp" />
+
+            <!-- ================= FORM ================= -->
+
+            <!-- NAMA -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/bg_card_dark"
+                android:hint="Nama Lengkap"
+                android:textColorHint="@color/input_hint"
+                app:startIconDrawable="@drawable/person"
+                app:startIconTint="@color/input_icon"
+                app:boxBackgroundColor="@null"
+                app:boxStrokeColor="@null"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_dark"
+                    android:paddingStart="48dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/input_text"
+                    android:textColorHint="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- EMAIL -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/input_hint"
+                android:hint="Email"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/input_icon"
+                app:boxBackgroundColor="@color/input_bg"
+                app:boxStrokeColor="@color/input_border"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_dark"
+                    android:paddingStart="48dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/input_text"
+                    android:textColorHint="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- PASSWORD -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Password"
+                android:textColorHint="@color/input_hint"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:endIconMode="password_toggle"
+                app:startIconTint="@color/input_icon"
+                app:endIconTint="@color/input_icon"
+                app:boxBackgroundColor="@color/input_bg"
+                app:boxStrokeColor="@color/input_border"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_dark"
+                    android:inputType="textPassword"
+                    android:paddingStart="48dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="48dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/input_text"
+                    android:textColorHint="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- CONFIRM PASSWORD -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirmPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/input_hint"
+                android:hint="Konfirmasi Password"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:endIconMode="password_toggle"
+                app:startIconTint="@color/input_icon"
+                app:endIconTint="@color/input_icon"
+                app:boxBackgroundColor="@color/input_bg"
+                app:boxStrokeColor="@color/input_border"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_dark"
+                    android:paddingStart="48dp"
+                    android:paddingEnd="48dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/input_text"
+                    android:textColorHint="@color/input_hint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- PHONE -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Nomor HP"
+                android:textColorHint="@color/input_hint"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/input_icon"
+                app:boxBackgroundColor="@color/input_bg"
+                app:boxStrokeColor="@color/input_border"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_dark"
+                    android:paddingStart="48dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="phone"
+                    android:textColor="@color/input_text"
+                    android:textColorHint="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TERMS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/cbTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/accent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Saya setuju dengan Syarat &amp; Ketentuan dan Kebijakan Privasi"
+                    android:textColor="@color/white_70"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:text="Daftar"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#1A1A1A"
+                android:background="@drawable/color_oranye"
+                app:backgroundTint="@null"
+                app:cornerRadius="22dp" />
+
+            <!-- LOGIN LINK -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? "
+                    android:textColor="@color/white_70" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:textColor="@color/accent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
