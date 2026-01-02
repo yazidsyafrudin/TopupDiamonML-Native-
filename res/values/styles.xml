@@ -1,0 +1,42 @@
+<resources>
+    <!-- Tema utama Anda ada di sini... -->
+    <!-- ... -->
+
+    <!-- ↓↓↓ SALIN MULAI DARI SINI ↓↓↓ -->
+
+    <!-- 1. Style untuk Teks di dalam Indikator Navigasi -->
+    <style name="App.NavigationIndicator.Text" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <!-- Menggunakan selector warna yang kita buat di Langkah 1 -->
+        <item name="android:textColor">@color/nav_text_color_selector</item>
+    </style>
+
+    <!-- 2. Style Utama untuk Indikator Navigasi (misal: TabLayout) -->
+    <style name="App.NavigationIndicator" parent="Widget.MaterialComponents.TabLayout.Colored">
+        <!-- Warna dan tinggi garis di bawah tab yang aktif -->
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <!-- Menggunakan style teks yang kita definisikan di atas -->
+        <item name="tabTextAppearance">@style/App.NavigationIndicator.Text</item>
+    </style>
+
+    <!-- Style Kustom untuk RadioButton Pilihan Pembayaran -->
+    <style name="Widget.App.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <!-- Menghilangkan tombol lingkaran default -->
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/bg_payment_option_selector</item>
+
+        <!-- Mengatur ukuran dan posisi -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:drawablePadding">12dp</item>
+
+        <!-- Mengatur tampilan teks -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
