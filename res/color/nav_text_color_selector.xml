@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android"><!-- Warna teks saat item menu DIPILIH -->
-    <item android:state_checked="true" android:color="#FFFFFF" />
-
-    <!-- Warna teks saat item menu TIDAK DIPILIH (default) -->
-    <item android:color="#8A8A8A" />
-</selector>
