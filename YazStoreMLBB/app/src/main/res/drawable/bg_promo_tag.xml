@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--
+    Warna latar belakang.
+    Warna ini sebenarnya tidak akan terpakai karena kita akan menimpanya
+    langsung di dalam header kartu promo (misal: header biru, merah, dll).
+    Namun, baik untuk memiliki warna placeholder.
+    -->
+    <solid android:color="#40FFFFFF" /> <!-- Putih dengan 25% opacity sebagai placeholder -->
+
+    <!--
+    Membuat sudutnya sangat membulat.
+    Menggunakan angka yang besar (misal 100dp) akan memastikan bentuknya
+    selalu menjadi kapsul, tidak peduli seberapa tinggi TextView-nya.
+    -->
+    <corners android:radius="100dp" />
+
+</shape>

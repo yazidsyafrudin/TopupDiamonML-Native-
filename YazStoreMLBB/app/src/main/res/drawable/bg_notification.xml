@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow -->
+    <item android:top="3dp">
+        <shape>
+            <solid android:color="#00000033"/>
+            <corners android:radius="22dp"/>
+        </shape>
+    </item>
+
+    <!-- Button utama -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#F4B223"
+                android:endColor="#D99A1A"
+                android:angle="270"/>
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+</layer-list>
