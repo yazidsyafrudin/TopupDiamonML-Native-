@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna saat item terpilih -->
+    <item android:state_selected="true" android:color="@color/accent" />
+    <!-- Warna default (tidak terpilih) -->
+    <item android:color="#404860" />
+</selector>
