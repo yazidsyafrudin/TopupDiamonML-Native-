@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873837001320",
+    "project_id": "yazstoremlbb",
+    "storage_bucket": "yazstoremlbb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873837001320:android:e9f6f4e0675611377419dd",
+        "android_client_info": {
+          "package_name": "com.example.yazstoremlbb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvto9RY1QWcIV3aoJaxC5Zjvu-mCpxCak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
